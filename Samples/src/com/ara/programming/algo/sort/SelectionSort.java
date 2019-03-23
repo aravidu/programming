@@ -1,4 +1,4 @@
-package com.ara.programming.algo;
+package com.ara.programming.algo.sort;
 
 import java.util.Arrays;
 
