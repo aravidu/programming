@@ -14,9 +14,8 @@ public class ArraysAsList {
         int val = 0;
         for (Integer num : numbers) {
         	val+=num;
-        } 
-        
-        
+        }
+        System.out.println(val);
 	}
 
 }
