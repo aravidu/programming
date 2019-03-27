@@ -7,7 +7,8 @@ public class ApplesOranges {
 		int[] oranges = {5, -6};
 		int s=7;
 		int t=11;
-		int 
+		int a=0;
+		int b=0;
 		int alen = apples.length;
         int acount = 0;
         for (int i=0;i<alen;i++) {
