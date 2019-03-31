@@ -76,7 +76,7 @@ public class Solution {
 
 			testCases--;
 		}
-		Collections.sort(studentList, new MyComparator<Student>());
+		Collections.sort(studentList, new MyComparator());
 		for (Student st : studentList) {
 			System.out.println(st.getFname());
 		}

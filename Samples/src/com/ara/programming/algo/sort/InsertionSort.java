@@ -1,24 +1,33 @@
 package com.ara.programming.algo.sort;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class InsertionSort {
+
+	// incomplete
 	public static void main(String[] args) {
-		//sorted array starts with 0
-		int[] nums = {20,35,-15,7,55,1,-22};
-		int len = nums.length;
-		for (int unsortedIndex=1;unsortedIndex<len;unsortedIndex++) {
-			int curr = nums[unsortedIndex]; // 35
-			for (int sortedIndex=(unsortedIndex-1);sortedIndex>=0;sortedIndex--) {
-				int currInSorted = nums[sortedIndex];  //20
-				if (curr<currInSorted) {
-					// then replace
-					int temp = curr;
-					nums[unsortedIndex] = currInSorted;
-				}
-			}
+		int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+
+		for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length; firstUnsortedIndex++) {
+			int newElement = intArray[firstUnsortedIndex];
+			
+			recursiveInsertionSort(intArray, firstUnsortedIndex);
 		}
-		System.out.println(Arrays.toString(nums));
+
+		System.out.println(Arrays.toString(intArray));
+		IntStream.of(intArray).forEach(x -> System.out.print(x + ","));
+	}
+
+	private static void recursiveInsertionSort(int[] intArray, int firstUnsortedIndex) {
+		int i;
+
+		for (i = firstUnsortedIndex; i > 0 && intArray[i - 1] > 0; i--) {
+			intArray[i] = intArray[i - 1];
+		}
+
+		intArray[i] = 0;
 		
 	}
+
 }

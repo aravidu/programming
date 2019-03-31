@@ -28,7 +28,7 @@ public class Anagrams2 {
         
         
         
-        System.out.println(anagrams ? "Anagrams": "Not Anagrams");
+        //System.out.println(anagrams ? "Anagrams": "Not Anagrams");
 
 	}
 

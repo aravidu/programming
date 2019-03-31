@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 public class Anagrams {
 
+	// incomplete
 	public static void main(String[] args) {
 		Map<Character,Integer> amap = new TreeMap<>();
         Map<Character,Integer> bmap = new TreeMap<>();
@@ -24,7 +25,7 @@ public class Anagrams {
         b = b.toLowerCase();
 
         for (int i=0;i<a.length();i++) { // anagram
-            Character c = a.charAt(i);
+            char c = a.charAt(i);
             if (amap.containsKey(c)) {
                 amap.put(c,amap.get(c)+1);
             } else {
@@ -45,22 +46,22 @@ public class Anagrams {
 
         int i=0;
         int j=0;
-        for(Map.Entry<Character, Integer> ae : amap.entrySet())
-        {
-        	if(bmap.containsKey(ae.getKey()))
-        	{
-        		int val1 = bmap.get(ae.getKey());
-        		if(ae.getValue() != val1)
-        		{
-        			return false;
-        		}
-        		
-        	}
-        	else
-        	{
-        		return false;
-        	}
-        }
+//        for(Map.Entry<Character, Integer> ae : amap.entrySet())
+//        {
+//        	if(bmap.containsKey(ae.getKey()))
+//        	{
+//        		int val1 = bmap.get(ae.getKey());
+//        		if(ae.getValue() != val1)
+//        		{
+//        			return false;
+//        		}
+//        		
+//        	}
+//        	else
+//        	{
+//        		return false;
+//        	}
+//        }
         for (Map.Entry<Character,Integer> ae : amap.entrySet()) {
             for (Map.Entry<Character,Integer> be : bmap.entrySet()) {
                 if (i==j) {
