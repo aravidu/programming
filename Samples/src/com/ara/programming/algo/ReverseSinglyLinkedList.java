@@ -2,7 +2,7 @@ package com.ara.programming.algo;
 
 public class ReverseSinglyLinkedList {
 	public static void main(String[] args) {
-		//3 2 1
+		// 3 2 1
 		ListNode head = null;
 //		for (int i=0;i<3;i++) {
 //			if (i==0) {
@@ -21,16 +21,17 @@ public class ReverseSinglyLinkedList {
 //			System.out.println(head.val);
 //			head = head.next;
 //		}
-		
+
 		System.out.println("reversing.. ");
-		
+
 		// 3 -> 2 -> 1
 		// 3
 		ListNode newHead = null;
 		while (head != null) {
 			ListNode curr = head;
-			curr.next = null;newHead = head.next;
+			curr.next = null;
+			newHead = head.next;
 		}
-		
+
 	}
 }
